@@ -1,0 +1,310 @@
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Estilos para o Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo-img {
+    width: 150px; /* Tamanho maior da logo */
+    transition: transform 0.5s ease;
+}
+
+.logo-img:hover {
+    transform: rotate(360deg);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adiciona espaço entre os elementos */
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre ícones e botão */
+}
+
+.links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #e94e77; /* Cor para hover */
+}
+
+/* Estilos para o botão de Comprar */
+.buy-button {
+    background-color: #ff6f61; /* Cor de fundo vibrante */
+    color: white; /* Cor do texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #ff3b30; /* Cor de fundo ao passar o mouse */
+}
+
+.buy-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 111, 97, 0.5); /* Efeito de foco */
+}
+
+/* Estiliza os ícones de redes sociais */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #e94e77;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #d43f5a;
+}
+
+/* Estilos para a Seção Intro */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px 50px;
+    background: linear-gradient(to bottom right, #ffefef, #f2f2f2);
+    position: relative;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 3em;
+    color: #e94e77; /* Cor principal para o título */
+    margin-bottom: 10px;
+}
+
+.typewriter {
+    font-size: 1.5em;
+    color: #5a5a5a;
+    position: relative;
+    display: inline-block;
+}
+
+.typewriter label {
+    color: #e94e77;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+button {
+    background-color: #e94e77;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d43f5a;
+}
+
+/* Detalhes decorativos */
+.decorative-details {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background: url('decorative-pattern.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Estilos para a Seção de Serviços */
+.services {
+    padding: 50px 20px;
+    background-color: #f2f2f2;
+}
+
+.services-container h2 {
+    font-size: 2.5em;
+    color: #e94e77;
+    margin-bottom: 20px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1 1 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service i {
+    font-size: 2.5em;
+    color: #e94e77;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Estilos para a Seção de Flores */
+.flowers {
+    padding: 50px 20px;
+}
+
+.flowers-container h2 {
+    font-size: 2.5em;
+    color: #e94e77;
+    margin-bottom: 20px;
+}
+
+.flowers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flower-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1 1 22%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.flower-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.flower-item h3 {
+    font-size: 1.5em;
+    color: #e94e77;
+}
+
+.flower-item p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Estilos para a Seção de Contato */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Adicionado para centralizar o formulário verticalmente */
+    height: 400px; /* Ajuste a altura conforme necessário */
+    margin: 0 auto;
+}
+
+.contact-container form {
+    width: 100%;
+    max-width: 600px;
+    text-align: center; /* Centraliza o texto no formulário */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #e94e77;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d43f5a;
+}
+
+/* Estilos para o Rodapé */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.footer-container a {
+    color: #e94e77;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
